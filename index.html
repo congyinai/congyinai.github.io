@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Congyi Nai</title>
+  <meta name="description" content="Congyi Nai, PhD student at Intelligent Earth, University of Oxford. Generative models for weather and climate prediction.">
+  <meta property="og:title" content="Congyi Nai">
+  <meta property="og:description" content="Generative models for weather and climate prediction.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a1020'/%3E%3Ccircle cx='16' cy='16' r='10' fill='none' stroke='%237cc4ff' stroke-width='1.6'/%3E%3Cpath d='M9 11.5l7 3.5 7-3.5M16 15v11' stroke='%23ffac6b' stroke-width='1.6' fill='none' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Apply saved theme before paint to avoid a flash.
+    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top">C. Nai</a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#trajectory">Trajectory</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle colour theme">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 7.8a4.2 4.2 0 0 1 0 8.4z" fill="currentColor"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" aria-label="Introduction">
+    <canvas id="globeCanvas" class="hero-canvas" aria-hidden="true"></canvas>
+    <canvas id="flowCanvas" class="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-scrim" aria-hidden="true"></div>
+
+    <div class="wrap hero-content">
+      <h1>Congyi Nai</h1>
+      <p class="lead">My research focuses on predicting weather and climate with generative models. I aim to combine the experience accumulated by numerical weather prediction with the scaling laws of AI, toward a scalable paradigm for data-driven weather and climate prediction.</p>
+      <p class="affil">PhD student, Intelligent Earth, University of Oxford</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#publications">Publications</a>
+        <a class="btn" href="cv.pdf">CV</a>
+        <a class="btn" href="mailto:ncy17@tsinghua.org.cn">Email</a>
+        <!-- TODO: replace with your Google Scholar profile URL -->
+        <a class="btn" href="https://scholar.google.com/" rel="noopener">Google Scholar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RESEARCH ============ -->
+  <section class="section" id="research">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Research</h2>
+      </div>
+
+      <p class="statement">AI for weather and climate should learn from two communities.</p>
+
+      <div class="pillars">
+        <div class="pillar">
+          <h3>Numerical weather prediction</h3>
+          <p>Decades of experience in building, running and verifying models of the atmosphere.</p>
+        </div>
+        <div class="pillar">
+          <h3>The AI community</h3>
+          <p>Scaling laws: models that improve predictably with more data, parameters and compute.</p>
+        </div>
+      </div>
+
+      <a class="feature" href="https://arxiv.org/abs/2605.01599" rel="noopener">
+        <span class="feature-name">Cast3</span>
+        <span class="feature-desc">A generative forecasting model built on NWP principles.</span>
+        <span class="feature-arrow" aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ PUBLICATIONS ============ -->
+  <section class="section" id="publications">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Publications</h2>
+      </div>
+      <p class="note"><sup>#</sup> Equal contribution</p>
+
+      <ol class="pubs" id="pubList">
+        <li class="pub" data-first="true">
+          <div class="pub-year mono">2026</div>
+          <div class="pub-body">
+            <h3 class="pub-title"><a href="https://arxiv.org/abs/2605.01599" rel="noopener">Cast3: Translating numerical weather prediction principles into data-driven forecasting</a></h3>
+            <p class="pub-authors"><b>Nai, C.</b>, Pan, B., Liang, Y., &amp; Chen, X.</p>
+            <p class="pub-venue"><i>arXiv</i> 2605.01599<span class="badge">Preprint</span></p>
+          </div>
+        </li>
+        <li class="pub" data-first="true">
+          <div class="pub-year mono">2025</div>
+          <div class="pub-body">
+            <h3 class="pub-title">Boosting weather forecast via generative superensemble</h3>
+            <p class="pub-authors"><b>Nai, C.</b>, Chen, X., Yang, S., Liang, Y., Xiao, Z., &amp; Pan, B.</p>
+            <p class="pub-venue"><i>npj Climate and Atmospheric Science</i>, 8, 377</p>
+          </div>
+        </li>
+        <li class="pub" data-first="true">
+          <div class="pub-year mono">2025</div>
+          <div class="pub-body">
+            <h3 class="pub-title"><a href="https://arxiv.org/abs/2503.03038" rel="noopener">Generative assimilation and prediction for weather and climate</a></h3>
+            <p class="pub-authors">Yang, S.<sup>#</sup>, <b>Nai, C.<sup>#</sup></b>, Liu, X., Li, W., Chao, J., Wang, J., et al.</p>
+            <p class="pub-venue"><i>arXiv</i> 2503.03038<span class="badge">Preprint</span></p>
+          </div>
+        </li>
+        <li class="pub" data-first="true">
+          <div class="pub-year mono">2024</div>
+          <div class="pub-body">
+            <h3 class="pub-title">Reliable precipitation nowcasting using probabilistic diffusion models</h3>
+            <p class="pub-authors"><b>Nai, C.</b>, Pan, B., Chen, X., Tang, Q., Ni, G., Duan, Q., Lu, B., Xiao, Z., &amp; Liu, X.</p>
+            <p class="pub-venue"><i>Environmental Research Letters</i>, 19, 034039<span class="badge badge-warm">Editor’s Choice</span></p>
+          </div>
+        </li>
+        <li class="pub" data-first="true">
+          <div class="pub-year mono">2023</div>
+          <div class="pub-body">
+            <h3 class="pub-title">A novel strategy for automatic selection of cross-basin data for training machine learning-based runoff models</h3>
+            <p class="pub-authors"><b>Nai, C.</b>, Liu, X., Tang, Q., Liu, L., Sun, S., &amp; Gaffney, P. P. J.</p>
+            <p class="pub-venue"><i>Water Resources Research</i></p>
+          </div>
+        </li>
+        <li class="pub" data-first="true">
+          <div class="pub-year mono">2025</div>
+          <div class="pub-body">
+            <h3 class="pub-title">Probabilistic diffusion models advance extreme flood forecasting</h3>
+            <p class="pub-authors">Ou, Z.<sup>#</sup>, <b>Nai, C.<sup>#</sup></b>, Pan, B., Zheng, Y., Shen, C., Jiang, P., Liu, X., Tang, Q., Li, W., &amp; Pan, M.</p>
+            <p class="pub-venue"><i>Geophysical Research Letters</i>, 52(15), e2025GL115705</p>
+          </div>
+        </li>
+        <li class="pub" data-first="false">
+          <div class="pub-year mono">2026</div>
+          <div class="pub-body">
+            <h3 class="pub-title">Fusion of multi-source precipitation records via coordinate-based generative models</h3>
+            <p class="pub-authors">Sun, S., <b>Nai, C.</b>, Pan, B., Li, W., Li, L., Li, X., Foufoula-Georgiou, E., &amp; Lin, Y.</p>
+            <p class="pub-venue"><i>Nature Communications</i>, 17</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ TRAJECTORY ============ -->
+  <section class="section" id="trajectory">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Trajectory</h2>
+      </div>
+
+      <ol class="track">
+        <li class="step is-now">
+          <div class="step-when mono">2026 – now</div>
+          <div class="step-what">
+            <h3>University of Oxford</h3>
+            <p>PhD student, Intelligent Earth</p>
+          </div>
+        </li>
+        <li class="step">
+          <div class="step-when mono">2025 – 2026</div>
+          <div class="step-what">
+            <h3>University of California, Los Angeles</h3>
+            <p>PhD studies, Atmospheric and Oceanic Sciences</p>
+          </div>
+        </li>
+        <li class="step">
+          <div class="step-when mono">2024 – 2026</div>
+          <div class="step-what">
+            <h3>Institute of Atmospheric Physics, CAS</h3>
+            <p>Research Assistant</p>
+          </div>
+        </li>
+        <li class="step">
+          <div class="step-when mono">2021 – 2024</div>
+          <div class="step-what">
+            <h3>Institute of Geographic Sciences and Natural Resources Research, CAS</h3>
+            <p>M.S. in Physical Geography</p>
+          </div>
+        </li>
+        <li class="step">
+          <div class="step-when mono">2017 – 2021</div>
+          <div class="step-what">
+            <h3>Tsinghua University</h3>
+            <p>B.Eng. in Hydraulic Engineering</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Contact</h2>
+      </div>
+      <a class="contact-mail" href="mailto:ncy17@tsinghua.org.cn">ncy17@tsinghua.org.cn</a>
+      <ul class="contact-links">
+        <!-- TODO: replace with your Google Scholar profile URL -->
+        <li><a href="https://scholar.google.com/" rel="noopener">Google Scholar ↗</a></li>
+        <li><a href="cv.pdf">CV ↗</a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-inner mono">© <span id="year">2026</span> Congyi Nai</div>
+</footer>
+
+<script src="globe.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
