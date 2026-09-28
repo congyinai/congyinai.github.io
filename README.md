@@ -3,8 +3,6 @@
 Static site (HTML/CSS/JS, no build step). Files: `index.html`, `style.css`, `globe.js` (hero cubed-sphere globe: wind particles + sliding conv kernels), `main.js`.
 
 ## Before publishing
-- Replace the two `https://scholar.google.com/` placeholders in `index.html` with your Scholar profile URL.
-- Add `cv.pdf` (a version **without** your phone number).
 - Optional: add DOI links to the journal papers in the Publications list.
 
 ## Preview locally
